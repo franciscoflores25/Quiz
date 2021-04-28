@@ -1,0 +1,50 @@
+<form [formGroup]="Formulario" >
+
+    <p>Region</p>
+    <select name="Regiones">
+        <option>--Inserte una region--</option>
+        <option value="1">Valparaiso</option>
+        <option value="2">Metropolitana</option>
+        <option value="3">Bio-Bio</option>
+        <option value="4">Araucania</option>
+    </select>
+
+    <p>Estado del clima: </p>
+
+      <input type="radio" id="Soleado" name="Clima" value="1" checked>
+      <label for="contactChoice1">Soleado</label>
+  
+      <input type="radio" id="Nublado" name="Clima" value="2">
+      <label for="contactChoice2">Nublado</label>
+  
+      <input type="radio" id="Lluvioso" name="Clima" value="3">
+      <label for="contactChoice3">Lluvioso</label>
+
+      <input type="radio" id="Tormenta" name="Clima" value="4">
+     <label for="contactChoice3">Tormenta</label>
+
+     <p>Dia</p>
+     <select name="Dias">
+         <option>--Inserte un Dia--</option>
+         <option value="1">Lunes</option>
+         <option value="2">Martes</option>
+         <option value="3">Miercoles</option>
+         <option value="4">Jueves</option>
+         <option value="4">Viernes</option>
+         <option value="4">Sábado</option>
+         <option value="4">Domingo</option>
+     </select>
+     
+     <p>Temperatura</p>
+     <label for="Temperatura"></label>
+     <input type="number" id="Temperatura"  name="Temperatura" placeholder="Ingrese la Temperatura">
+
+    <p>Grados</p>
+    <input type="radio" id="C" name="Grados" value="1" checked>
+    <label for="C">Celsius</label>
+
+    <input type="radio" id="F" name="Grados" value="2">
+    <label for="F">Fahrenheit</label>
+
+    <button onclick="cambiarData()" name="guardar"> Actualizar</button>
+</form>
